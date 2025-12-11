@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Forge 服务器 - 欢迎加入我们的冒险世界</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Minecraft&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">⛏️</span>
+                <span class="logo-text">Minecraft Forge 服务器</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#features">特色</a></li>
+                <li><a href="#mods">模组列表</a></li>
+                <li><a href="#guide">游玩指南</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">欢迎来到我们的 Forge 服务器</h1>
+            <p class="hero-subtitle">探索无限可能，与朋友们一起开启全新的 Minecraft 冒险</p>
+            <div class="server-info">
+                <div class="info-box">
+                    <span class="info-label">服务器地址</span>
+                    <span class="info-value" id="server-ip">play.example.com</span>
+                    <button class="copy-btn" onclick="copyIP()">📋 复制</button>
+                </div>
+                <div class="info-box">
+                    <span class="info-label">版本</span>
+                    <span class="info-value">1.20.1 Forge</span>
+                </div>
+                <div class="info-box">
+                    <span class="info-label">在线玩家</span>
+                    <span class="info-value" id="player-count">0/100</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#guide" class="btn btn-primary">开始游玩</a>
+                <a href="#mods" class="btn btn-secondary">下载整合包</a>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- 特色功能 -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">服务器特色</h2>
+            <p class="section-subtitle">为什么选择我们的服务器？</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>丰富的模组</h3>
+                    <p>精心挑选100+优质模组，包括科技、魔法、冒险等多个类型，为你带来全新的游戏体验</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>稳定高速</h3>
+                    <p>采用高性能服务器，配置优化插件，确保流畅的游戏体验，24小时不间断运行</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>安全保护</h3>
+                    <p>完善的领地保护系统，定期自动备份，确保你的建筑和物品安全无忧</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>活跃社区</h3>
+                    <p>友好的玩家社区，定期举办各类活动，与志同道合的朋友一起探索Minecraft世界</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <h3>新手友好</h3>
+                    <p>新玩家礼包，完善的新手教程，管理员在线帮助，让你快速融入服务器</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>多样玩法</h3>
+                    <p>生存、建筑、PVP、RPG多种玩法，总有一款适合你，让你永不感到无聊</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模组列表 -->
+    <section id="mods" class="mods">
+        <div class="container">
+            <h2 class="section-title">核心模组</h2>
+            <p class="section-subtitle">我们服务器安装的主要模组</p>
+            <div class="mods-grid">
+                <div class="mod-card">
+                    <div class="mod-header">
+                        <h3>科技类</h3>
+                    </div>
+                    <ul class="mod-list">
+                        <li>🔋 Industrial Craft 2 - 工业时代2</li>
+                        <li>⚙️ Mekanism - 通用机械</li>
+                        <li>🔌 Applied Energistics 2 - 应用能源2</li>
+                        <li>🏭 Thermal Expansion - 热力膨胀</li>
+                        <li>🤖 RFTools - 射频工具</li>
+                    </ul>
+                </div>
+                <div class="mod-card">
+                    <div class="mod-header">
+                        <h3>魔法类</h3>
+                    </div>
+                    <ul class="mod-list">
+                        <li>✨ Thaumcraft - 神秘时代</li>
+                        <li>🔮 Botania - 植物魔法</li>
+                        <li>📚 Ars Nouveau - 新生魔艺</li>
+                        <li>🧙 Electroblob's Wizardry - 巫术学</li>
+                        <li>⭐ Astral Sorcery - 星辉魔法</li>
+                    </ul>
+                </div>
+                <div class="mod-card">
+                    <div class="mod-header">
+                        <h3>冒险类</h3>
+                    </div>
+                    <ul class="mod-list">
+                        <li>🗺️ Biomes O' Plenty - 更多生物群系</li>
+                        <li>🏰 Dungeons Mod - 地牢模组</li>
+                        <li>⚔️ Ice and Fire - 冰与火之歌</li>
+                        <li>🐉 Dragon Mounts - 龙骑士</li>
+                        <li>🌲 Twilight Forest - 暮色森林</li>
+                    </ul>
+                </div>
+                <div class="mod-card">
+                    <div class="mod-header">
+                        <h3>辅助类</h3>
+                    </div>
+                    <ul class="mod-list">
+                        <li>📦 JEI - 物品管理器</li>
+                        <li>🗺️ JourneyMap - 旅行地图</li>
+                        <li>⚒️ Tinkers' Construct - 匠魂</li>
+                        <li>🎒 Iron Chests - 铁箱子</li>
+                        <li>🔧 Waystones - 传送石碑</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="download-section">
+                <h3>整合包下载</h3>
+                <p>我们提供完整的客户端整合包，下载即可游玩</p>
+                <a href="#" class="btn btn-primary">下载整合包 (约500MB)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 游玩指南 -->
+    <section id="guide" class="guide">
+        <div class="container">
+            <h2 class="section-title">游玩指南</h2>
+            <p class="section-subtitle">快速开始你的冒险之旅</p>
+            <div class="guide-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>下载安装</h3>
+                        <p>下载我们提供的整合包，解压后使用启动器运行。确保你已安装Java 17或更高版本。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>加入服务器</h3>
+                        <p>在多人游戏中添加服务器地址：<strong>play.example.com</strong>，然后点击加入服务器。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>阅读规则</h3>
+                        <p>首次进入服务器后，请仔细阅读服务器规则，遵守规则是愉快游戏的基础。</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>开始冒险</h3>
+                        <p>领取新手礼包，找一个喜欢的地方建立你的家园，开始你的Minecraft之旅吧！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="requirements">
+                <h3>系统要求</h3>
+                <div class="req-grid">
+                    <div class="req-item">
+                        <strong>最低配置：</strong>
+                        <ul>
+                            <li>CPU: Intel i3 或同等级</li>
+                            <li>内存: 4GB RAM</li>
+                            <li>显卡: 集成显卡</li>
+                            <li>Java: Java 17+</li>
+                        </ul>
+                    </div>
+                    <div class="req-item">
+                        <strong>推荐配置：</strong>
+                        <ul>
+                            <li>CPU: Intel i5 或同等级</li>
+                            <li>内存: 8GB RAM</li>
+                            <li>显卡: GTX 1050 或同等级</li>
+                            <li>Java: Java 17+</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我们</h2>
+            <p class="section-subtitle">有问题或建议？欢迎联系我们</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>QQ群</h3>
+                    <p>123456789</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>电子邮件</h3>
+                    <p>admin@example.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🎮</div>
+                    <h3>Discord</h3>
+                    <p>discord.gg/example</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Minecraft Forge 服务器. 所有权利保留.</p>
+            <p>本服务器与 Mojang Studios 无关</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
